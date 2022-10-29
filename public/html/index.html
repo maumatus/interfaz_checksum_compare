@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <title>Interfaz comparador CheckSum</title>
+</head>
+<body>
+    <section id="body-app">
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <div id="drop-area-entrada" class="drop-dashed">
+                <label for="txt-a">Elige archivo txt/checksum que te enviaron</label>
+                <input 
+                    type="file" 
+                    id="txt-a" 
+                    name="txt-a" 
+                    accept="text/plain" 
+                />
+            </div>
+             <div id="drop-area-salida" class="drop">
+                <label for="txt-b">Elige archivo txt/checksum que tú generaste</label>
+                <input 
+                    type="file" 
+                    id="txt-b" 
+                    name="txt-b" 
+                    accept="text/plain" 
+                />
+            </div>
+            
+            <div class="preview">
+                <p>No files currently selected for upload</p>
+            </div>
+            <button id="boton-procesar">PROCESAR</button>
+        </form>
+
+        <section id="info-usuario"></section>
+
+        
+
+    </section>
+    
+    <script src="/public/js/scripts.js"></script>
+</body>
+</html>

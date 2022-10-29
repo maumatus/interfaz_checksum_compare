@@ -1,0 +1,19 @@
+#drop-area-entrada {
+    width: 200px;
+    height: 200px;
+}
+
+#drop-area-salida {
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.drop {
+    border: 5px solid blue;
+}
+
+.drop-dashed {
+    border: 5px dashed blue;
+}
+  
