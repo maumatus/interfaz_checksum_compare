@@ -11,34 +11,24 @@
     <section id="body-app">
 
         <form action="" method="post" enctype="multipart/form-data">
-            <div id="drop-area-entrada" class="drop-dashed">
-                <label for="txt-a">Elige archivo txt/checksum que te enviaron</label>
-                <input 
-                    type="file" 
-                    id="txt-a" 
-                    name="txt-a" 
-                    accept="text/plain" 
-                />
-            </div>
-             <div id="drop-area-salida" class="drop">
-                <label for="txt-b">Elige archivo txt/checksum que tú generaste</label>
-                <input 
-                    type="file" 
-                    id="txt-b" 
-                    name="txt-b" 
-                    accept="text/plain" 
-                />
-            </div>
-            
-            <div class="preview">
-                <p>No files currently selected for upload</p>
-            </div>
+
+                <label for="txt-a" class="drop-container">
+                    <span class="drop-title">Arrastra archivo A</span>
+                    or
+                    <input type="file" id="txt-a" name="txt-a" accept="text/plain" class="inputfile" required />
+                </label>
+                
+                <label for="txt-b" class="drop-container">
+                    <span class="drop-title">Arrastra archivo B</span>
+                    or
+                    <input type="file" id="txt-b" name="txt-b" accept="text/plain" class="inputfile" required />
+                </label>
+
             <button id="boton-procesar">PROCESAR</button>
+            
         </form>
 
-        <section id="info-usuario"></section>
-
-        
+        <section id="info-usuario"></section> 
 
     </section>
     
